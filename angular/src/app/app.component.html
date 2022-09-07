@@ -1,0 +1,9 @@
+<form>
+  Upload file.
+  <input type="file"
+         id="file"
+         (change)="fileUpload($any($event.target).files)">
+  <button (click)="confirm()">
+    Press Me
+  </button>
+</form>
